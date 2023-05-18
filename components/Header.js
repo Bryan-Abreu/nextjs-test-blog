@@ -4,12 +4,16 @@ import Style from "../styles/Header.module.css"
 
 const Header = () => {
   return (
-    <header>
-      <div className={ Style.container}>
-        <Link href="/" className={Style.logo}>86it.</Link>
-        <ul>
+    <header className={  Style.header}>
+      <div className={Style.container}>
+        <Link className={Style.logo} href="/" >
+           86it.</Link>
+        <ul >
           <li>
-            <Link href="/">Category</Link>
+            <Link className={Style.headerText} href="/">Category1</Link>
+          </li>
+          <li>
+            <Link href="/">Category2</Link>
           </li>
         </ul>
       </div>
@@ -18,3 +22,4 @@ const Header = () => {
 };
 
 export default Header;
+/* mongodb */
