@@ -5,8 +5,8 @@ import Style from "../styles/Header.module.css"
 const Header = () => {
   return (
     <header>
-      <div className="container">
-        <Link href="/">86it.</Link>
+      <div className={ Style.container}>
+        <Link href="/" className={Style.logo}>86it.</Link>
         <ul>
           <li>
             <Link href="/">Category</Link>
