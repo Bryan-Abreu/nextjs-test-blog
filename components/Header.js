@@ -4,6 +4,7 @@ import Style from "../styles/Header.module.css";
 import { graphCms } from "../lib/graphCms";
 
 const Header = () => {
+    //-----------------------Api call ---------------------->
   const [categoryLinks, setCategoryLinks] = useState([]);
   useEffect(() => {
     async function fetchData (){
@@ -21,6 +22,8 @@ const Header = () => {
     }
     fetchData();
   }, []);
+
+  //--------------------------------------------------------->
   return (
     <header className={Style.header}>
       <div className={Style.container}>
